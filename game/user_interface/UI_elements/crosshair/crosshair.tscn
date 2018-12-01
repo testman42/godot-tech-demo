@@ -1,0 +1,352 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://game/user_interface/UI_elements/crosshair/crosshair.gd" type="Script" id=1]
+
+
+[node name="crosshair" type="Node2D"]
+
+script = ExtResource( 1 )
+
+[node name="center" type="CenterContainer" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1025.0
+margin_bottom = 599.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+use_top_left = false
+
+[node name="cross" type="Control" parent="center" index="0"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_top = 299.0
+margin_right = 512.0
+margin_bottom = 299.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="horisontal" type="Line2D" parent="center/cross" index="0"]
+
+points = PoolVector2Array( -15, 0, 15, 0 )
+width = 1.0
+default_color = Color( 0.4, 0.5, 1, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+_sections_unfolded = [ "Transform" ]
+
+[node name="vertical" type="Line2D" parent="center/cross" index="1"]
+
+points = PoolVector2Array( 0, -15, 0, 15 )
+width = 1.0
+default_color = Color( 0.4, 0.5, 1, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="small_white_hit_marker" type="Control" parent="center" index="1"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_top = 299.0
+margin_right = 512.0
+margin_bottom = 299.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="line1" type="Line2D" parent="center/small_white_hit_marker" index="0"]
+
+points = PoolVector2Array( 2, 2, 15, 15 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+_sections_unfolded = [ "Transform" ]
+
+[node name="line2" type="Line2D" parent="center/small_white_hit_marker" index="1"]
+
+points = PoolVector2Array( -2, 2, -15, 15 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="line3" type="Line2D" parent="center/small_white_hit_marker" index="2"]
+
+points = PoolVector2Array( 15, -15, 2, -2 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="line4" type="Line2D" parent="center/small_white_hit_marker" index="3"]
+
+points = PoolVector2Array( -15, -15, -2, -2 )
+width = 1.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="small_red_hit_marker" type="Control" parent="center" index="2"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_top = 299.0
+margin_right = 512.0
+margin_bottom = 299.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="line1" type="Line2D" parent="center/small_red_hit_marker" index="0"]
+
+points = PoolVector2Array( 2, 2, 15, 15 )
+width = 1.0
+default_color = Color( 1, 0, 0, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+_sections_unfolded = [ "Transform" ]
+
+[node name="line2" type="Line2D" parent="center/small_red_hit_marker" index="1"]
+
+points = PoolVector2Array( -2, 2, -15, 15 )
+width = 1.0
+default_color = Color( 1, 0, 0, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="line3" type="Line2D" parent="center/small_red_hit_marker" index="2"]
+
+points = PoolVector2Array( 15, -15, 2, -2 )
+width = 1.0
+default_color = Color( 1, 0, 0, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="line4" type="Line2D" parent="center/small_red_hit_marker" index="3"]
+
+points = PoolVector2Array( -15, -15, -2, -2 )
+width = 1.0
+default_color = Color( 1, 0, 0, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="big_white_hit_marker" type="Control" parent="center" index="3"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_top = 299.0
+margin_right = 512.0
+margin_bottom = 299.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="line1" type="Line2D" parent="center/big_white_hit_marker" index="0"]
+
+points = PoolVector2Array( 3, 3, 25, 25 )
+width = 2.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+_sections_unfolded = [ "Transform" ]
+
+[node name="line2" type="Line2D" parent="center/big_white_hit_marker" index="1"]
+
+points = PoolVector2Array( -3, 3, -25, 25 )
+width = 2.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="line3" type="Line2D" parent="center/big_white_hit_marker" index="2"]
+
+points = PoolVector2Array( 25, -25, 3, -3 )
+width = 2.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="line4" type="Line2D" parent="center/big_white_hit_marker" index="3"]
+
+points = PoolVector2Array( -25, -25, -3, -3 )
+width = 2.0
+default_color = Color( 1, 1, 1, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="big_red_hit_marker" type="Control" parent="center" index="4"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_top = 299.0
+margin_right = 512.0
+margin_bottom = 299.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="line1" type="Line2D" parent="center/big_red_hit_marker" index="0"]
+
+points = PoolVector2Array( 3, 3, 25, 25 )
+width = 2.0
+default_color = Color( 1, 0, 0, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+_sections_unfolded = [ "Transform" ]
+
+[node name="line2" type="Line2D" parent="center/big_red_hit_marker" index="1"]
+
+points = PoolVector2Array( -3, 3, -25, 25 )
+width = 2.0
+default_color = Color( 1, 0, 0, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="line3" type="Line2D" parent="center/big_red_hit_marker" index="2"]
+
+points = PoolVector2Array( 25, -25, 3, -3 )
+width = 2.0
+default_color = Color( 1, 0, 0, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="line4" type="Line2D" parent="center/big_red_hit_marker" index="3"]
+
+points = PoolVector2Array( -25, -25, -3, -3 )
+width = 2.0
+default_color = Color( 1, 0, 0, 1 )
+texture_mode = 181595568
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="dot" type="Control" parent="center" index="5"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_top = 299.0
+margin_right = 512.0
+margin_bottom = 299.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Line2D" type="Line2D" parent="center/dot" index="0"]
+
+points = PoolVector2Array( -1.5, 0, 1.5, 0 )
+width = 3.0
+default_color = Color( 0.4, 0.5, 1, 1 )
+texture_mode = 31
+sharp_limit = 2.0
+round_precision = 8
+_sections_unfolded = [ "Transform" ]
+
+[node name="circle" type="Control" parent="center" index="6"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_top = 299.0
+margin_right = 512.0
+margin_bottom = 299.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="x" type="Control" parent="center" index="7"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 512.0
+margin_top = 299.0
+margin_right = 512.0
+margin_bottom = 299.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+

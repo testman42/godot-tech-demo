@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/torus_knot.obj-9ca3447cdb6e0bb2bc6e5d1b70f8c181.mesh"
+
+[deps]
+
+files=[ "res://.import/torus_knot.obj-9ca3447cdb6e0bb2bc6e5d1b70f8c181.mesh" ]
+
+source_file="res://resources/models/torus_knot.obj"
+dest_files=[ "res://.import/torus_knot.obj-9ca3447cdb6e0bb2bc6e5d1b70f8c181.mesh", "res://.import/torus_knot.obj-9ca3447cdb6e0bb2bc6e5d1b70f8c181.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

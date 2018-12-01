@@ -1,0 +1,119 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://resources/models/blender_exports/tile_01.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://resources/models/blender_exports/edge_tile.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://resources/models/blender_exports/corner.obj" type="ArrayMesh" id=3]
+
+[sub_resource type="BoxShape" id=1]
+
+extents = Vector3( 1, 0.1, 1 )
+
+[sub_resource type="ConvexPolygonShape" id=4]
+
+points = PoolVector3Array( 1, -0.0999756, 1, 1, -0.0999756, -1, -1, -0.0999756, 1, -1, -0.0999756, -1, -1, -0.0999756, -1, 1, 0.0999756, -0.999512, -1, -0.0999756, 1, 0.999512, 0.0999756, 1, 1, 0.0999756, -0.999512, 1, -0.0999756, -1, 0.999512, 0.0999756, 1, 1, -0.0999756, 1, 0.999512, 0.0999756, 1, 1, -0.0999756, 1, -1, -0.0999756, 1, -1, -0.0999756, 1, -1, -0.0999756, -1, 1, -0.0999756, -1, 1, 0.0999756, -0.999512, -1, -0.0999756, -1 )
+
+[sub_resource type="ConvexPolygonShape" id=3]
+
+points = PoolVector3Array( 1, -0.0999756, 1, 1, -0.0999756, -1, -1, -0.0999756, 1, -1, -0.0999756, -1, -1, 0.0999756, 1, 1, -0.0999756, -0.999512, 0.999512, -0.0999756, 1, 1, -0.0999756, -0.999512, 1, -0.0999756, -1, 0.999512, -0.0999756, 1, 1, -0.0999756, 1, 0.999512, -0.0999756, 1, 1, -0.0999756, 1, -1, 0.0999756, 1, -1, -0.0999756, 1, -1, 0.0999756, 1, -1, -0.0999756, 1, -1, -0.0999756, -1, -1, -0.0999756, -1, 1, -0.0999756, -1, 1, -0.0999756, -0.999512, -1, -0.0999756, -1, -1, -0.0999756, -1, -1, -0.0999756, -1 )
+
+[node name="terrain_tiles" type="Spatial" index="0"]
+
+[node name="ground_tile" type="MeshInstance" parent="." index="0"]
+
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = ExtResource( 1 )
+skeleton = NodePath("..")
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="ground_tile" index="0"]
+
+editor/display_folded = true
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="ground_tile/StaticBody" index="0"]
+
+shape = SubResource( 1 )
+disabled = false
+
+[node name="edge_tile" type="MeshInstance" parent="." index="1"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = ExtResource( 2 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody" type="StaticBody" parent="edge_tile" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="edge_tile/StaticBody" index="0"]
+
+shape = SubResource( 4 )
+disabled = false
+
+[node name="corner_tile" type="MeshInstance" parent="." index="2"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = ExtResource( 3 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody" type="StaticBody" parent="corner_tile" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="corner_tile/StaticBody" index="0"]
+
+shape = SubResource( 3 )
+disabled = false
+
+

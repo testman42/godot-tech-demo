@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/worn.obj-d2c4301f12d8f75555b655d5b4230da4.mesh"
+
+[deps]
+
+files=[ "res://.import/worn.obj-d2c4301f12d8f75555b655d5b4230da4.mesh" ]
+
+source_file="res://resources/models/worn.obj"
+dest_files=[ "res://.import/worn.obj-d2c4301f12d8f75555b655d5b4230da4.mesh", "res://.import/worn.obj-d2c4301f12d8f75555b655d5b4230da4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

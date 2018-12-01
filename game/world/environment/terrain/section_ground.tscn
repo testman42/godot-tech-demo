@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://game/world/environment/terrain/Material.material" type="Material" id=1]
+
+[sub_resource type="ArrayMesh" id=1]
+
+resource_name = "Cube"
+blend_shape_mode = 1
+custom_aabb = AABB( 0, 0, 0, 0, 0, 0 )
+surfaces/0 = {
+"aabb": AABB( -1, -1, -1, 2.00001, 2, 2 ),
+"array_data": PoolByteArray( 0, 60, 0, 188, 0, 188, 0, 60, 0, 129, 0, 0, 0, 188, 0, 188, 255, 59, 0, 60, 0, 129, 0, 0, 255, 187, 0, 188, 0, 188, 0, 60, 0, 129, 0, 0, 51, 187, 0, 60, 51, 187, 0, 60, 0, 127, 0, 0, 51, 59, 0, 60, 51, 59, 0, 60, 0, 127, 0, 0, 51, 59, 0, 60, 51, 187, 0, 60, 0, 127, 0, 0, 51, 59, 0, 60, 51, 187, 0, 60, 126, 6, 0, 0, 0, 60, 0, 188, 0, 60, 0, 60, 126, 6, 0, 0, 0, 60, 0, 188, 0, 188, 0, 60, 126, 6, 0, 0, 51, 59, 0, 60, 51, 59, 0, 60, 0, 6, 126, 0, 0, 188, 0, 188, 255, 59, 0, 60, 0, 6, 126, 0, 0, 60, 0, 188, 0, 60, 0, 60, 0, 6, 126, 0, 0, 188, 0, 188, 255, 59, 0, 60, 130, 6, 0, 0, 51, 187, 0, 60, 51, 187, 0, 60, 130, 6, 0, 0, 255, 187, 0, 188, 0, 188, 0, 60, 130, 6, 0, 0, 0, 60, 0, 188, 0, 188, 0, 60, 0, 6, 130, 0, 51, 187, 0, 60, 51, 187, 0, 60, 0, 6, 130, 0, 51, 59, 0, 60, 51, 187, 0, 60, 0, 6, 130, 0, 0, 60, 0, 188, 0, 60, 0, 60, 0, 129, 0, 0, 51, 187, 0, 60, 51, 59, 0, 60, 0, 127, 0, 0, 51, 59, 0, 60, 51, 187, 0, 60, 126, 6, 0, 0, 51, 59, 0, 60, 51, 59, 0, 60, 126, 6, 0, 0, 0, 60, 0, 188, 0, 60, 0, 60, 126, 6, 0, 0, 51, 59, 0, 60, 51, 59, 0, 60, 0, 6, 126, 0, 51, 187, 0, 60, 51, 59, 0, 60, 0, 6, 126, 0, 0, 188, 0, 188, 255, 59, 0, 60, 0, 6, 126, 0, 0, 188, 0, 188, 255, 59, 0, 60, 130, 6, 0, 0, 51, 187, 0, 60, 51, 59, 0, 60, 130, 6, 0, 0, 51, 187, 0, 60, 51, 187, 0, 60, 130, 6, 0, 0, 0, 60, 0, 188, 0, 188, 0, 60, 0, 6, 130, 0, 255, 187, 0, 188, 0, 188, 0, 60, 0, 6, 130, 0, 51, 187, 0, 60, 51, 187, 0, 60, 0, 6, 130, 0 ),
+"array_index_data": PoolByteArray( 0, 0, 2, 0, 1, 0, 3, 0, 5, 0, 4, 0, 6, 0, 8, 0, 7, 0, 9, 0, 11, 0, 10, 0, 12, 0, 14, 0, 13, 0, 15, 0, 17, 0, 16, 0, 0, 0, 1, 0, 18, 0, 3, 0, 4, 0, 19, 0, 20, 0, 22, 0, 21, 0, 23, 0, 25, 0, 24, 0, 26, 0, 28, 0, 27, 0, 29, 0, 31, 0, 30, 0 ),
+"blend_shape_data": [  ],
+"format": 98051,
+"index_count": 36,
+"material": ExtResource( 1 ),
+"name": "Material",
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 32
+}
+
+[sub_resource type="ConvexPolygonShape" id=2]
+
+points = PoolVector3Array( 1, -1, -1, -1, -1, 0.999512, -0.999512, -1, -1, -0.899902, 1, -0.899902, 0.899902, 1, 0.899902, 0.899902, 1, -0.899902, 0.899902, 1, -0.899902, 1, -1, 1, 1, -1, -1, 0.899902, 1, 0.899902, -1, -1, 0.999512, 1, -1, 1, -1, -1, 0.999512, -0.899902, 1, -0.899902, -0.999512, -1, -1, 1, -1, -1, -0.899902, 1, -0.899902, 0.899902, 1, -0.899902, 1, -1, 1, -0.899902, 1, 0.899902, 0.899902, 1, -0.899902, 0.899902, 1, 0.899902, 1, -1, 1, 0.899902, 1, 0.899902, -0.899902, 1, 0.899902, -1, -1, 0.999512, -1, -1, 0.999512, -0.899902, 1, 0.899902, -0.899902, 1, -0.899902, 1, -1, -1, -0.999512, -1, -1, -0.899902, 1, -0.899902 )
+
+[node name="meshlib" type="Spatial"]
+
+[node name="ground" type="MeshInstance" parent="." index="0"]
+
+transform = Transform( 1, 0, 0, 0, 0.02, 0, 0, 0, 1, 0, 0, 0 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = true
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = SubResource( 1 )
+skeleton = NodePath("..")
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="ground" index="0"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="collision" type="CollisionShape" parent="ground/StaticBody" index="0"]
+
+shape = SubResource( 2 )
+disabled = false
+
+[node name="grid" type="GridMap" parent="ground" index="1"]
+
+transform = Transform( 1, 0, 0, 0, 50, 0, 0, 0, 1, 0, 1.04846, 0 )
+theme = null
+cell_size = Vector3( 2, 2, 2 )
+cell_octant_size = 8
+cell_center_x = true
+cell_center_y = true
+cell_center_z = true
+cell_scale = 1.0
+collision_layer = 1
+collision_mask = 1
+data = {
+"cells": PoolIntArray(  )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
+
+

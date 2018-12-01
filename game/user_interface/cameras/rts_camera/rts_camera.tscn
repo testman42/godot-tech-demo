@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://game/user_interface/cameras/rts_camera/rts_camera.gd" type="Script" id=1]
+[ext_resource path="res://game/user_interface/cameras/rts_camera/rts_camera_ui.gd" type="Script" id=2]
+[ext_resource path="res://game/user_interface/cameras/rts_camera/camera_navigation.tscn" type="PackedScene" id=3]
+
+[node name="rts_camera_anchor" type="Position3D" index="0"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.1457, 0, -43.5383 )
+script = ExtResource( 1 )
+camera_speed = 0.003
+camera_rotation = 0.0
+direction = Vector3( 0, 0, 0 )
+fast_move = false
+rotating_camera = false
+camera_acceleration = 2
+
+[node name="rts_camera" type="Camera" parent="." index="0" groups=[
+"rts_camera",
+]]
+
+transform = Transform( 1, 0, 0, 0, 0.316445, 0.948611, 0, -0.948611, 0.316445, 0, 42.6812, 15.7221 )
+keep_aspect = 1
+cull_mask = 1048575
+environment = null
+h_offset = 0.0
+v_offset = 0.0
+doppler_tracking = 0
+projection = 0
+current = false
+fov = 70.0
+size = 1.0
+near = 0.05
+far = 100.0
+script = ExtResource( 2 )
+
+[node name="navigation" parent="rts_camera" index="0" instance=ExtResource( 3 )]
+
+

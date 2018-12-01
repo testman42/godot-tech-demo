@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/twisted_torus.obj-5517c9dd4da8d773b6f89b0d5b8c1cb6.mesh"
+
+[deps]
+
+files=[ "res://.import/twisted_torus.obj-5517c9dd4da8d773b6f89b0d5b8c1cb6.mesh" ]
+
+source_file="res://resources/models/twisted_torus.obj"
+dest_files=[ "res://.import/twisted_torus.obj-5517c9dd4da8d773b6f89b0d5b8c1cb6.mesh", "res://.import/twisted_torus.obj-5517c9dd4da8d773b6f89b0d5b8c1cb6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

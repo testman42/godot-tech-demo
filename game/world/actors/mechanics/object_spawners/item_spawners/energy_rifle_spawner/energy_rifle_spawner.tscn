@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://game/world/actors/mechanics/object_spawners/item_spawners/energy_rifle_spawner/energy_rifle_spawner.gd" type="Script" id=1]
+[ext_resource path="res://game/world/anchors/countdown_anchor/countdown_timer_anchor.tscn" type="PackedScene" id=2]
+
+[node name="energy_rifle_spawner" type="Spatial"]
+
+script = ExtResource( 1 )
+item_already_spawned = 0
+respawn_time = 10
+display_mode = "text"
+
+[node name="countdown_timer_anchor" parent="." index="0" instance=ExtResource( 2 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="respawn_timer" type="Timer" parent="." index="1"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = true
+autostart = false
+
+[connection signal="timeout" from="respawn_timer" to="." method="_on_respawn_timer_timeout"]
+
+

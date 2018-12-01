@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://game/world/actors/mechanics/hitscan/hitscan_damage.gd" type="Script" id=1]
+
+[node name="hitscan_damage" type="RayCast"]
+
+enabled = true
+exclude_parent = true
+cast_to = Vector3( 0, 0, 40 )
+collision_mask = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+damage = 10
+hitscan_range = 40
+damage_type = "normal"
+
+

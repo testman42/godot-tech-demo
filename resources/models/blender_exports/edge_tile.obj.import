@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/edge_tile.obj-4c3919590d1d3dcabf8c714f5360f397.mesh"
+
+[deps]
+
+files=[ "res://.import/edge_tile.obj-4c3919590d1d3dcabf8c714f5360f397.mesh" ]
+
+source_file="res://resources/models/blender_exports/edge_tile.obj"
+dest_files=[ "res://.import/edge_tile.obj-4c3919590d1d3dcabf8c714f5360f397.mesh", "res://.import/edge_tile.obj-4c3919590d1d3dcabf8c714f5360f397.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

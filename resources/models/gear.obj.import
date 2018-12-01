@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/gear.obj-642a4d6f0df17dc9810f547bc83c4d20.mesh"
+
+[deps]
+
+files=[ "res://.import/gear.obj-642a4d6f0df17dc9810f547bc83c4d20.mesh" ]
+
+source_file="res://resources/models/gear.obj"
+dest_files=[ "res://.import/gear.obj-642a4d6f0df17dc9810f547bc83c4d20.mesh", "res://.import/gear.obj-642a4d6f0df17dc9810f547bc83c4d20.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

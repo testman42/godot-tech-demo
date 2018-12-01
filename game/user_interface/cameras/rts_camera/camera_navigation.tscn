@@ -1,0 +1,197 @@
+[gd_scene load_steps=9 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 423.289, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 431.737, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 221.104 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 218.142 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 30, 30 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 30, 30 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 30, 30 )
+
+[sub_resource type="RectangleShape2D" id=8]
+
+custom_solver_bias = 0.0
+extents = Vector2( 30, 30 )
+
+[node name="borders" type="Node2D"]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="top" type="Area2D" parent="." index="0"]
+
+editor/display_folded = true
+position = Vector2( 537.187, 6.98898 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
+
+[node name="area" type="CollisionShape2D" parent="top" index="0"]
+
+position = Vector2( -12.0267, -1.04895 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="bottom" type="Area2D" parent="." index="1"]
+
+editor/display_folded = true
+position = Vector2( 500.644, 587.821 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
+
+[node name="area" type="CollisionShape2D" parent="bottom" index="0"]
+
+position = Vector2( 16.8187, 1.36035 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="right" type="Area2D" parent="." index="2"]
+
+editor/display_folded = true
+position = Vector2( 1014.21, 293.291 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
+
+[node name="area" type="CollisionShape2D" parent="right" index="0"]
+
+position = Vector2( 4.43207, 0 )
+shape = SubResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="left" type="Area2D" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( 9.39284, 314.791 )
+scale = Vector2( 1.01928, 1 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
+
+[node name="area" type="CollisionShape2D" parent="left" index="0"]
+
+position = Vector2( 0, -14.9397 )
+shape = SubResource( 4 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="top_right_corner" type="Area2D" parent="." index="4"]
+
+editor/display_folded = true
+position = Vector2( 1005.88, 26.9394 )
+scale = Vector2( 1, 1.01887 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
+
+[node name="area" type="CollisionShape2D" parent="top_right_corner" index="0"]
+
+shape = SubResource( 5 )
+
+[node name="top_left_corner" type="Area2D" parent="." index="5"]
+
+editor/display_folded = true
+position = Vector2( 36.4929, 29.3559 )
+scale = Vector2( 1.25049, 1 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
+
+[node name="area" type="CollisionShape2D" parent="top_left_corner" index="0"]
+
+shape = SubResource( 6 )
+
+[node name="bottom_right_corner" type="Area2D" parent="." index="6"]
+
+editor/display_folded = true
+position = Vector2( 1000.42, 570.582 )
+scale = Vector2( 1.06155, 1.06554 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
+
+[node name="area" type="CollisionShape2D" parent="bottom_right_corner" index="0"]
+
+shape = SubResource( 7 )
+
+[node name="bottom_left_corner" type="Area2D" parent="." index="7"]
+
+editor/display_folded = true
+position = Vector2( 33.0315, 571.159 )
+scale = Vector2( 1.11134, 1 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
+
+[node name="area" type="CollisionShape2D" parent="bottom_left_corner" index="0"]
+
+shape = SubResource( 8 )
+_sections_unfolded = [ "Transform" ]
+
+

@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://game/user_interface/UI_presets/fps_preset/fps_preset.gd" type="Script" id=1]
+[ext_resource path="res://game/user_interface/UI_elements/crosshair/crosshair.tscn" type="PackedScene" id=2]
+[ext_resource path="res://game/user_interface/UI_elements/select_bar/selector_bar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://game/user_interface/UI_elements/event_log/event_log.tscn" type="PackedScene" id=4]
+[ext_resource path="res://game/user_interface/UI_elements/labels/generic_label/generic_label.tscn" type="PackedScene" id=5]
+
+[node name="fps_preset" type="Node2D"]
+
+script = ExtResource( 1 )
+
+[node name="crosshair" parent="." index="0" instance=ExtResource( 2 )]
+
+[node name="selector_bar" parent="." index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 91.9481, 521.539 )
+
+[node name="event_log" parent="." index="2" instance=ExtResource( 4 )]
+
+position = Vector2( 5.50256, 3.84476 )
+
+[node name="hover_info" parent="." index="3" instance=ExtResource( 5 )]
+
+visible = false
+position = Vector2( 511.676, 340.51 )
+
+

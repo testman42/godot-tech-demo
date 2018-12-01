@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/hyperboloid.obj-a81614b3d99c9af55171bcd6d57247d3.mesh"
+
+[deps]
+
+files=[ "res://.import/hyperboloid.obj-a81614b3d99c9af55171bcd6d57247d3.mesh" ]
+
+source_file="res://resources/models/hyperboloid.obj"
+dest_files=[ "res://.import/hyperboloid.obj-a81614b3d99c9af55171bcd6d57247d3.mesh", "res://.import/hyperboloid.obj-a81614b3d99c9af55171bcd6d57247d3.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

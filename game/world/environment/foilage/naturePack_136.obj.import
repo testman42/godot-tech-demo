@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/naturePack_136.obj-7e414c475abac5ddfa31f073970e943a.mesh"
+
+[deps]
+
+files=[ "res://.import/naturePack_136.obj-7e414c475abac5ddfa31f073970e943a.mesh" ]
+
+source_file="res://game/world/environment/foilage/naturePack_136.obj"
+dest_files=[ "res://.import/naturePack_136.obj-7e414c475abac5ddfa31f073970e943a.mesh", "res://.import/naturePack_136.obj-7e414c475abac5ddfa31f073970e943a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

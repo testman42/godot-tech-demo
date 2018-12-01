@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/corner.obj-363503b0856b0aabf30d0433c0d0cc02.mesh"
+
+[deps]
+
+files=[ "res://.import/corner.obj-363503b0856b0aabf30d0433c0d0cc02.mesh" ]
+
+source_file="res://resources/models/blender_exports/corner.obj"
+dest_files=[ "res://.import/corner.obj-363503b0856b0aabf30d0433c0d0cc02.mesh", "res://.import/corner.obj-363503b0856b0aabf30d0433c0d0cc02.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

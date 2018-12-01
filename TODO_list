@@ -1,0 +1,138 @@
+To generate TODO list run the following:
+
+find . -type f -name *.gd -print -exec grep TODO {} \; | grep -B 1 TODO | tr -d "\t"
+
+Current TODO list:
+
+[from code]
+./game/game_logic/main_loop.gd
+# TODO: find proper name for this node
+# TODO: lol why doesn't this work from here but does from input_handler.gd?
+# TODO: should there be some UI handler (something that relays info between UI and game world)?
+# TODO: actually, whole codebase should be reworked because there are *way* too many get_node() calls being repeated
+# TODO: implement more UI modes
+# TODO: rework this in way more elegant way
+# TODO: make unit logic use groups instead of scene tree
+# TODO: figure out why projectile speed does not change despite different time scale
+./game/game_logic/rts_logic/rts_logic.gd
+# TODO: make whole tech tree structure way more abstract, so that it can be easily used for other content
+# TODO remove this ancient legacy code
+## TODO: way more abstract method of creating and checking tech tree
+# TODO: move this to RTS logic
+# TODO: move this to RTS logic
+# TODO: this is bad, rework this so that it contains categories and which categories those categories provide
+./game/game_logic/fps_logic/fps_logic.gd
+# TODO: should this be handling the hit-marker size?
+# TODO: find a way so that we don't look for crosshair node very time this gets called
+# TODO: find out why RTS button made this a null instance
+--
+./game/settings/fps_settings.gd
+# TODO: make a list of settings that are usually included with games
+--
+./game/user_interface/HUD/HUD_elements/crosshair/crosshair.gd
+# TODO: is it better to re-color lines each time or to have multiple instances of hit-markers and just hide/show those?
+# TODO: bloody hell this is hacked together badly. Find more elegant solution.
+./game/user_interface/HUD/HUD_elements/build_menu/construction_menu.gd
+# TODO: this is very bad. Rework tech tree so that it returns "categories", allowing for easy creation of new un-specified categories
+# TODO: rework this so that menu is generated automatically from the given scenes, so that it doesn't have to be pre-made
+# TODO: this needs to be very much reworked and de-hardcoded
+./game/user_interface/HUD/HUD_elements/rts_selection_rectangle/selection_rectangle.gd
+# TODO: check if new code works, then remove this legacy code
+--
+./game/user_interface/HUD/HUD_elements/event_log/event_log.gd
+# TODO: calculate this accoring to log window size
+# TODO: actually make messages disappear after specified time
+./game/user_interface/HUD/HUD_elements/select_bar/selector_bar.gd
+# TODO: made data structure that is used to generate bar content
+# TODO: make function that returns the selected item
+# TODO: actually maybe fill up with the number of possible entried and then just hide/show as necesary
+# TODO: Deprecate this ASAP, make items have proper names themselves and let the bar be generated with those names
+# TODO: make this take more than just Label
+# TODO: make item selection way less sphagetti than it currently is
+# TODO: make this actually generate from the state of inventory
+# TODO: replace "step" with "position" and have character script handle the order
+--
+./game/user_interface/input_handler/input_handler.gd
+# TODO: lol why does this work nice if it's in input_handler.gd but doesn't work well if called from main loop?
+./game/user_interface/input_handler/rts_input_handler.gd
+# TODO: implement this in a more user friendly way
+# TODO: figure out how to properly handle menu updating
+# TODO: reimplement this without the dirty offset hack
+# TODO: ask Godot dev team why this even happens, why does navigation behave as if it's at 0,0,0 and not as if it's translated
+./game/user_interface/input_handler/first_person_input_handler.gd
+# TODO: find out if there is more elegant way to limit the x rotation
+# TODO: figure out which script should be responsible for camera toggle
+--
+./game/user_interface/cameras/first_person_camera/first_person_camera.gd
+# TODO: figure out if you even need UI layer since it appears that 3D nodes displaying their 2D childred works well without layer
+# TODO: make this bad debug better
+# TODO: figure out the logic to seperate colliders for this from other in-game colliders, but just display all for now
+./game/user_interface/cameras/rts_camera/rts_camera.gd
+# TODO: already placed Cone of Construction is our home for now
+--
+./game/user_interface/UI_elements_layer/UI_elements_layer.gd
+# TODO: find a way to scale elements
+./game/user_interface/menus/main_menu/main_menu.gd
+#TODO: make settings window appear
+./game/user_interface/menus/pause_menu/pause_menu.gd
+# TODO: implement state saving for the things that need to be saved
+--
+./game/world/actors/mechanics/projectiles/big_plazma_projectile/big_plazma_projectile.gd
+# TODO: this is a very bad way to implement AOE damage. Need to implement proper explosion mechanic and have it be spawned here.
+--
+./game/world/actors/mechanics/area_of_effect/area_of_effect.gd
+# TODO: figure out how to apply multiple effects
+./game/world/actors/mechanics/object_spawners/item_spawners/plazma_rifle_spawner/plazma_rifle_spawner.gd
+# TODO: rework this backwards logic for ready()
+./game/world/actors/mechanics/object_spawners/item_spawners/item_spawner.gd
+# TODO: implement "none" to disable countdown
+./game/world/actors/mechanics/object_spawners/item_spawners/energy_rifle_spawner/energy_rifle_spawner.gd
+# TODO: rework this backwards logic for ready()
+--
+./game/world/actors/mechanics/hitscan/laser/laser.gd
+# TODO: find more elegant way to merge hitscan and "animation" to reduce unnecesary script duplication
+--
+./game/world/actors/objects/misc/resources/voxels/voxels.gd
+#TODO: refactor economy
+./game/world/actors/objects/misc/resources/resource.gd
+#TODO: refactor economy
+./game/world/actors/objects/misc/resources/polygons/polygons.gd
+#TODO: refactor economy
+--
+./game/world/actors/objects/weapons/weapon.gd
+# TODO: find some more efficient way to determine if object can be picked up. Most likely groups
+# TODO: how would we drop this properly in front of player?
+--
+./game/world/actors/objects/constructions/construction.gd
+## TODO: check if those groups are used correctly
+# TODO: kill this bad code before it lays it's young
+# TODO: figure out if there could be a class that characters and buildings all derive from
+--
+./game/world/actors/characters/character.gd
+# TODO: is it better to have inventory be single list and then filter items on the fly 
+# TODO: make this more abstract so that it works with various cameras
+# TODO: make this less spaghetti
+# TODO: make selector bar actually return selected value to here and then just equip whatever selector bar returned
+# TODO: why does this need to be run twice in order to take effect?
+# TODO: kill this bad code before it lays it's young
+# TODO: rewrite this to handle the new "effect":[amount,type] system
+# TODO: actualy spawn giblets
+--
+./game/world/actors/characters/test_player/player.gd
+# TODO REMOVE
+# TODO temp testing for now...
+--
+./game/world/actors/units/unit.gd
+# TODO: implement unit manager that handles movement logic for multiple units
+# TODO: how ethical is it to abuse node groups to make finding nodes easier?
+# TODO: just change colour until proper UI elements are implemented
+--
+./assets/gui_in_3D_test/gui_3d.gd
+# TODO: modify this to simulate in-game mouse
+./assets/simple_fpsplayer/Player.gd
+# TODO: this has to be replaced with a better implementation as soon as possible
+
+[other TODO]
+# TODO: proper "thanks to" list
+# https://github.com/Bauxitedev/meteorite/
+# https://github.com/khairul169/gfps

@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://game/user_interface/UI_elements/markers/objective_marker/objective_marker.gd" type="Script" id=1]
+
+[node name="objective_marker" type="Node2D" index="0" groups=[
+"UI_elements",
+]]
+
+script = ExtResource( 1 )
+
+[node name="Line2D" type="Line2D" parent="." index="0"]
+
+points = PoolVector2Array( -30, -20, 0, 20, 30, -20 )
+width = 10.0
+default_color = Color( 0.182373, 0.5625, 0.188313, 1 )
+texture_mode = -1082130432
+sharp_limit = 2.0
+round_precision = 8
+
+[node name="Line2D2" type="Line2D" parent="." index="1"]
+
+points = PoolVector2Array( -30, 10, 0, 50, 30, 10 )
+width = 10.0
+default_color = Color( 0.180392, 0.560784, 0.188235, 1 )
+texture_mode = -1082130432
+sharp_limit = 2.0
+round_precision = 8
+
+

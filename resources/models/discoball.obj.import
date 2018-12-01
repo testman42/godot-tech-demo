@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/discoball.obj-0384d0003d5a7c9e040f7096e331f77a.mesh"
+
+[deps]
+
+files=[ "res://.import/discoball.obj-0384d0003d5a7c9e040f7096e331f77a.mesh" ]
+
+source_file="res://resources/models/discoball.obj"
+dest_files=[ "res://.import/discoball.obj-0384d0003d5a7c9e040f7096e331f77a.mesh", "res://.import/discoball.obj-0384d0003d5a7c9e040f7096e331f77a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

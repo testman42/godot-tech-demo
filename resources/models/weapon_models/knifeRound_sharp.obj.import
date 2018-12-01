@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/knifeRound_sharp.obj-c8a3561e4ed0896c054be952ad29f57f.mesh"
+
+[deps]
+
+files=[ "res://.import/knifeRound_sharp.obj-c8a3561e4ed0896c054be952ad29f57f.mesh" ]
+
+source_file="res://resources/models/weapon_models/knifeRound_sharp.obj"
+dest_files=[ "res://.import/knifeRound_sharp.obj-c8a3561e4ed0896c054be952ad29f57f.mesh", "res://.import/knifeRound_sharp.obj-c8a3561e4ed0896c054be952ad29f57f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

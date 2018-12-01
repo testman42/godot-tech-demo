@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tile_01.obj-e6a421dbfbe0e392aa4c80f685ad4a7a.mesh"
+
+[deps]
+
+files=[ "res://.import/tile_01.obj-e6a421dbfbe0e392aa4c80f685ad4a7a.mesh" ]
+
+source_file="res://resources/models/blender_exports/tile_01.obj"
+dest_files=[ "res://.import/tile_01.obj-e6a421dbfbe0e392aa4c80f685ad4a7a.mesh", "res://.import/tile_01.obj-e6a421dbfbe0e392aa4c80f685ad4a7a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

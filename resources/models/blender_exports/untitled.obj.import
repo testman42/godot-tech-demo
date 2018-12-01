@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/untitled.obj-c9227efca925debe0a3bb4d1af67851c.mesh"
+
+[deps]
+
+files=[ "res://.import/untitled.obj-c9227efca925debe0a3bb4d1af67851c.mesh" ]
+
+source_file="res://resources/models/blender_exports/untitled.obj"
+dest_files=[ "res://.import/untitled.obj-c9227efca925debe0a3bb4d1af67851c.mesh", "res://.import/untitled.obj-c9227efca925debe0a3bb4d1af67851c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

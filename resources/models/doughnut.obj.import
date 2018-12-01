@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/doughnut.obj-2bc60d133805c4b21e749a6b5af6eca1.mesh"
+
+[deps]
+
+files=[ "res://.import/doughnut.obj-2bc60d133805c4b21e749a6b5af6eca1.mesh" ]
+
+source_file="res://resources/models/doughnut.obj"
+dest_files=[ "res://.import/doughnut.obj-2bc60d133805c4b21e749a6b5af6eca1.mesh", "res://.import/doughnut.obj-2bc60d133805c4b21e749a6b5af6eca1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

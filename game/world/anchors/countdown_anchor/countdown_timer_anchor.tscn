@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://game/world/anchors/countdown_anchor/countdown_timer_anchor.gd" type="Script" id=1]
+
+[node name="countdown_timer_anchor" type="Position3D"]
+
+script = ExtResource( 1 )
+
+

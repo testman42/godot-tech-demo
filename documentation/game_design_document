@@ -1,0 +1,360 @@
+
+Godot Tech Demo Design Document
+
+
+Project by free and open source community
+
+Version 0.1
+
+
+
+
+Table of contents
+//to be added once GDD is even remotely out of draft phase
+
+
+
+
+Introduction / Abstract
+// >mfw no good FOSS games
+// >mfw no good Godot games
+// >mfw nobody is using Godot
+// >mfw not many game genres on Linux
+
+
+Project purpose
+
+Purpose of this project is to create a proof of concept / tech demo in Godot engine that would showcase possible uses of said engine for various game genres and would also allow for the individual parts of the project to be easily built upon or integrated into other Godot projects.
+Basically a set of already put together building blocks that people can either play with or disassemble and reassemble or use for their own purposes.
+With that, the creation of higher quality cross-platform games should become easier.
+After project reaches playable state, it should be added to repository so that it appears Godot's add-on browser.
+
+
+General description
+//basically make a project that is to multiple popular game genres what M.U.G.E.N. is to fighting games
+Tech demo would function as 3D sandbox open world that is split into multiple areas where different game mechanics are showcased in each area.
+All elements of the project source should be as modular as possible, so that game structure can be very easily changed. At the start the default artstyle for project should be graybox / lowpoly design, as primary effort should be making game mechanics work well. Making project look good could be done with optinally available HD content in the form of add-on or as pre-packaged project directory.  
+Project should consist of three major zones (medieval fantasy, present, sci-fi future) and various minior zones that would serve to demonstrate game genres and more specific game mechanics that do not fit easily into any of major zones.
+
+
+
+Gameplay overview
+
+At start the player controls a humanoid character with standard movement control scheme. Player character starts in the centre of playable area, where there is some basic information written around.
+Even as player has absolute freedom of movement, start zone implies to player that there are four possible directions that player can choose to go. Each leads to one of bigger sections: medieval fantasy world, sci-fi futuristic world, present world and empty area where game control nodes are placed that player can use to spawn various objects or scenes.
+Other actors should, just like player, be able to move from one environment to another. They should not have any incentive to do so by default, and should stay within their primary environmnet. However, player interaction could break the default behaviour and make them leave the primary environment. For example AI following player out of the environmet (either friendly follower or aggressive enemy/creature), physically pushing or pulling the actor, etc.
+Other NPCs should be mechnaically same as player (all should be first class citizens).
+The developer command line interface should be available to player by default.
+
+
+
+Content 
+// described content of what the player will see and interact with
+
+Game mechanics
+// movement, first person view, third person view, switching perspective, player stats, inventory, equipping items, aiming, hitscan attack, projectile attack, melee attack, spawning objects, placing objects, moving objects, NPC conversation, using vehicles, basic quest, respawn, score, checkpoints, basic board games, developer command line, physics, pick-ups, power-ups, dual-qielding, weapon wheel, time manipulation (stop time, slow motion, speedup time), camera fade out / fade in
+
+
+World sections
+
+World is split into multiple areas, each containing different world of it's own. Those areas are not seperated by any barriers, only with some empty ground, so that player can freely move between the worlds, can take items from one world to another and can also manipulate other actors from one world to cross into other world.
+Each would section should have a lot of generic tropes, essentially making it the most generic game of it's genre.
+Maybe allow player to manually trigger the expansion of each of world sections, only for the expanded area be procedurally generated instead of being manually designed.
+
+
+Medieval Fantasy
+// Swords, bows, village, castle, magic, wizards, witches, wizard staff, magic enchantments, spellcasting, fantasy/mythical creatures, forrest, dungeons, ghosts, skeletons, tombs, volcano, armor, robes, main quest, faction quests, side quests
+
+
+Present setting
+// Guns, cars, planes, helicopters, roads, city, tall buildings, pedestrians, racing, boats, trains, phones, main missions, side missions, computers, hacking, police, military
+
+
+Future Sci-Fi
+// Advanced weapons, vehicles, arena shooter, power armor, spaceships, teleportation, aliens, robots, togglable power-ups, jetpack, grapple hook
+
+
+Dynamic content plane
+// Various game mechanics demonstration, games with different camera perspective, turn based board games, spawning any existing object in game, debug elements like audio and light sources that can be controlled and manipulated by player
+
+
+Controls
+// how game handles player input in various cases
+
+
+
+Technical info
+// description of what developer will see and interact with. Described structure of project.
+
+Project should have established coding and structure convention.
+Both project directory structure in filesystem and project's structure in Godot Editor should be the same.
+Essentially scene tree in Godot Editor should mirror the flesystem direcotry hierarchy.
+Directory structure should firstly be categorised by the context, into which part of the game does scene fit.
+Then each scene should have hierarchy properly categorised by type.
+
+Fore example categorised by context:
+.
+├── game
+│   ├── user_interface
+│   │   ├── menus
+│   │   │   ├── main
+│   │   │   ├── esc
+│   │   │   └── options
+│   │   ├── HUD
+│   │   │   ├── stats
+│   │   │   ├── crosshair
+│   │   │   ├── tooltips
+│   │   │   ├── compass
+│   │   │   ├── inventory
+│   │   │   ├── journal
+│   │   │   └── minimap
+│   │   └── camera
+│   │   │   ├── text
+│   │   │   └── weapon_bob
+│   ├── world
+│   │   ├── environment
+│   │   │   ├── terrain
+│   │   │   ├── structures
+│   │   │   └── foilage
+│   │   └── skybox
+│   └── actors
+│       ├── characters
+│       │   ├── NPCs
+│       │   └── creatures
+│       ├── objects
+│       │   ├── containers
+│       │   ├── weapons
+│       │   │   └── weapon_projectiles
+│       │   ├── items
+│       │   └── vehicles
+│       └── pickups
+├── documentation
+│   ├── 
+│   └── 
+└──
+
+and then within each of those subdirectories each scene having the followind structure:
+
+scene
+├── assets
+│   ├── 2D
+│   │   ├── icons
+│   │   ├── effects
+│   │   └── textures
+│   ├── 3D
+│   │   ├── models
+│   │   └── effects
+│   ├── audio
+│   │   ├── voice
+│   │   ├── effects
+│   │   └── music
+│   └── text
+│       └── fonts
+├── scripts
+└── misc
+
+
+
+Documentation
+// description of what goes into project documentation
+
+Readme
+Game design document (this file)
+To-do list
+License
+Roadmap
+Contributors
+Source info (info about stuff that goes into the project. Where it was taken from, how it is licenced, other relevant metadata)
+
+
+Assets
+// all code should be FOSS, all art and sound royatly free
+
+
+Achievements
+// references, funny
+
+
+Easter eggs
+// references
+
+
+Inspirations
+//list of games that use game mechanics similar to those presented in tech demo
+
+
+Links
+
+https://etherpad.net/p/godot_tech_demo_gdd -- allows for collaborative editing of this document, is fully FOSS platform
+
+
+Somewhat relevant links
+http://github.com/QuentinCaffeino/godot-console -- in-game command line interface
+https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
+https://github.com/khairul169/gFPS
+http://github.com/dploeger/godot-git-control
+http://github.com/RodZill4/godot-openstreetmap
+http://github.com/gokudomatic/godot_fps_crawler
+https://github.com/ValveSoftware/GameNetworkingSockets
+https://godot.readthedocs.io/en/latest/tutorials/3d/fps_tutorial/part_one.html -- FPS tutorial
+https://www.instagram.com/alch.imi/ -- can be used for fantasy world actors
+https://www.goodreads.com/book/show/940230.Barlowe_s_Guide_to_Extraterrestrials -- can be used for sci-fi world actors
+https://turtletooth.com/files/fps_controller.zip
+https://docs.unrealengine.com/latest/INT/Programming/Development/CodingStandard/
+http://vlambeer.com/toolkit/
+https://web.archive.org/web/20130425114751/http://www.e-games.tech.purdue.edu/DesignDoc.asp
+https://en.wikipedia.org/wiki/First-class_citizen
+http://wwwhome.cs.utwente.nl/~theune/PUBS/Narrator-final-clin17.pdf
+
+
+Ideas
+// pls help me sort this into the relevant segments of this document, kthx
+
+- have a floating "screen" object / control node that is used to provide in-game interface for changing relevant game settings. There can be multiple such screens present in the game world, each allowing control of specific set of settings. For example, it could be used to change the properties of already existing scene or it could be used to pre-configure settings for the scene that it then spawns. It would basically serve as in-game GUI equivalent of developer command line interface.
+
+- Simple game / board game scenes: Possible smaller scenes that could be spawned should be simple games and board games, essentially serving as minigames. Possible examples: tic-tac-toe, connect 4, chess, stratego, pool, battleship, unsnarl-it, mineswepper, pinball, achtungdiekurve, galton board...   When playing those games, camera perspective should change to tilted top-down view of the game area, but should still allow player to leave this perspective for the default first/third person view while still being able to play the minigame.
+
+- Every possible object should be standalone scene.
+
+- World procedural generation: Randomly generated, generated from seed, generated from OpenStreetMap
+
+
+
+Possible GDD sections:
+//headers taken from various other game design documents
+
+- Cover page
+- Version history
+- Index
+
+- Concept
+- Game analysis
+- Mission Statement
+- Genre
+- Platforms
+- Target Audience
+- Game elements
+- Storyline
+- Characters
+- Gameplay
+- Overview of gameplay
+- Gameplay Mechanics
+- Player Experience
+- Gameplay Guidelines
+- Game Objectives
+- Rewards
+- Level Design
+- Control Scheme
+- Game Asthetics
+- User Interface
+- Inventory
+
+- Main Menu
+- Options menu
+- Game options
+- Saving and loading
+
+- Philosophy
+- Common Questions
+- Project scope
+- Influences
+- "The elevator pitch"
+
+- General Features
+- Multiplayer Features
+- Editor
+- Gameplay
+
+- Game Concept
+- Game Flow
+- Project Scope
+- Physics
+- General Movement
+- Other Movement
+- Objects
+- Pick up objects
+- Moving objects
+- Inventory
+- Crafting
+- Character creation
+- Character progression
+
+- Interaction with the world
+- Actions
+- Switches / Buttons
+- Talking
+- Reading
+
+- Combat
+- Economy
+
+- Cheats
+- Easter Eggs
+- Achievements
+
+- Back Story
+- Plot Elements
+- Game Progression
+
+- Licence considerations
+- Cutscenes
+
+- Game World
+- Map
+- Encounters
+- Level walkthrough
+
+- Interface
+- Game launcher
+- Main menu
+- HUD
+- Options menu
+- Other menus
+- Camera / perspective
+- Controls
+- Developer command line interface
+
+- Audio
+- Music
+- Sound effects
+- Voice synthesis
+- Voice acting
+
+- Help System
+
+- Artificial intelligence
+- Opponent AI
+- Enemy AI
+- Non-combat AI
+- Friendly AI
+
+- Physics
+- Collision Detection
+- Pathfinding
+
+- Technical
+- Target hardware
+- Development hardware and software
+- Development procedures and standards
+- Game engine
+- Networking
+- Scripting Language
+- Localisations
+
+- Concept art
+- Game art
+- Style guides
+- 2D assets
+- 3D assets
+
+- Appendices / references
+- Project website
+- Github repo
+
+- Schedule
+- Test plan
+- Tasks
+
+
+
+

@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tetrahedron.obj-e5b6882889e537c4acc62efc9cd1ec54.mesh"
+
+[deps]
+
+files=[ "res://.import/tetrahedron.obj-e5b6882889e537c4acc62efc9cd1ec54.mesh" ]
+
+source_file="res://resources/models/tetrahedron.obj"
+dest_files=[ "res://.import/tetrahedron.obj-e5b6882889e537c4acc62efc9cd1ec54.mesh", "res://.import/tetrahedron.obj-e5b6882889e537c4acc62efc9cd1ec54.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

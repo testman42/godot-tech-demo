@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://game/world/actors/objects/constructions/tetrahedron_of_transmutation/tetrahedron_of_transmutation.gd" type="Script" id=1]
+[ext_resource path="res://resources/models/tetrahedron.obj" type="ArrayMesh" id=2]
+
+[sub_resource type="SphereShape" id=1]
+
+radius = 1.0
+
+[node name="tetrahedron_of_transmutation" type="StaticBody"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+ui_name = "name"
+max_health = 0
+build_radius = 0
+building_area = 0
+power = 0
+price = 0
+
+[node name="mesh" type="MeshInstance" parent="." index="0"]
+
+transform = Transform( 7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 1.5, 0 )
+layers = 1
+material_override = null
+cast_shadow = 1
+extra_cull_margin = 0.0
+use_in_baked_light = false
+lod_min_distance = 0.0
+lod_min_hysteresis = 0.0
+lod_max_distance = 0.0
+lod_max_hysteresis = 0.0
+mesh = ExtResource( 2 )
+skeleton = NodePath("..")
+material/0 = null
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="." index="1"]
+
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 1.5, 0 )
+shape = SubResource( 1 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="collector_spawn" type="Position3D" parent="." index="2"]
+
+transform = Transform( 0.72178, 0, -0.692122, 0, 1, 0, 0.692122, 0, 0.72178, -7.26284, 2.27581, 0 )
+
+
