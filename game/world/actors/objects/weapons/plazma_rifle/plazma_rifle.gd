@@ -29,7 +29,7 @@ func _process(delta):
 		yield(secondary_timer, "timeout")
 		secondary_timer.stop()
 
-func activate(fire_mode, event):
+func activate(fire_mode, event="pressed"):
 	var event_bool
 	match event:
 		"pressed": event_bool = true

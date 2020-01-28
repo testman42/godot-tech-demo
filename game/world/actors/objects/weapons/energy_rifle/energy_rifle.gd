@@ -6,7 +6,7 @@ func _ready():
 	var action1 = load("res://game/world/actors/mechanics/hitscan/laser/laser.tscn")
 	actions.append(action1)
 
-func activate(fire_mode, event):
+func activate(fire_mode, event="pressed"):
 	if event == "pressed":
 		fire()
 

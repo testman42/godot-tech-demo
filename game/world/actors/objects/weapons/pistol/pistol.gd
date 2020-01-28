@@ -6,7 +6,8 @@ func _ready():
 	var action1 = load("res://game/world/actors/mechanics/hitscan/hitscan_damage.tscn")
 	actions.append(action1)
 
-func activate(fire_mode, event):
+# warning-ignore:unused_argument
+func activate(fire_mode, event="pressed"):
 	if event == "pressed":
 		fire()
 

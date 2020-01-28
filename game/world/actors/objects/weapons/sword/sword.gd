@@ -17,7 +17,7 @@ func _process(delta):
 	if swing_active: # and swing_timer.time_left == 0:
 		swing()
 
-func activate(fire_mode, event):
+func activate(fire_mode, event="pressed"):
 	var event_bool
 	match event:
 		"pressed": event_bool = true
